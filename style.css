@@ -17,6 +17,11 @@ html {
   margin: auto;
 }
 
+p {
+  margin-top: 10px;
+}
+
+
 /* navbar styling */
 
 .navbar {
@@ -81,6 +86,21 @@ color: #fff;
   font-size: 23px;
   cursor: pointer;
   display: none;
+}
+
+/* Main button */
+
+.main-btn {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all .5s ease;
 }
 
 /* Home section styling */
@@ -372,7 +392,7 @@ section .title::after {
 }
 
 .skills .skills-content .right .css::before {
-  width: 80%;
+  width: 60%;
 }
 
 .skills .skills-content .right .js::before {
@@ -380,13 +400,21 @@ section .title::after {
 }
 
 .skills .skills-content .right .php::before {
-  width: 80%;
+  width: 60%;
+}
+
+.skills .skills-content .right .react::before {
+  width: 30%;
+}
+
+.skills .skills-content .right .typescript::before {
+  width: 15%;
 }
 
 /* teams section styling */
 
 .teams .title::after {
-  content: "Who with me";
+  content: "What i did";
 }
 
 .teams .carousel .card {
@@ -398,7 +426,8 @@ section .title::after {
 }
 
 .teams .carousel .card:hover {
-  background: crimson;
+  background: rgb(150, 147, 148);
+  color: crimson;
 }
 
 .teams .carousel .card .box {
@@ -414,8 +443,8 @@ section .title::after {
 }
 
 .teams .carousel .card .text {
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 35px;
+  font-weight: 600;
   margin: 10px 0 7px 0;
 }
 
@@ -429,7 +458,7 @@ section .title::after {
 }
 
 .teams .carousel .card:hover img {
-  border-color: #fff;
+  border-color: crimson;
 }
 
 .owl-dots {
@@ -579,7 +608,7 @@ section .title::after {
 
 @media (max-width: 1104px) {
   .about .about-content .left img {
-    height: 350px;
+    height: 500px;
     width: 350px;
   }
 }
